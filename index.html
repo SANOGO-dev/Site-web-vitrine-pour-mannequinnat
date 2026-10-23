@@ -9,8 +9,92 @@
 </head>
 <body>
 
-    
 
+
+<header>
+  <div class="wrap nav">
+    <a href="#accueil" class="logo">Maison <span>Élite</span></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">☰</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="wrap">
+      <h1>L’élégance a un visage</h1>
+      <p>Maison Élite révèle et accompagne les talents de demain pour la mode, la publicité et l’événementiel.</p>
+    </div>
+  </section>
+
+  <section class="about" id="apropos">
+    <div class="wrap">
+      <h2>À propos</h2>
+      <p>Fondée avec la passion de la mode et de l’image, notre agence sélectionne, forme et représente des mannequins professionnels pour des défilés, des campagnes publicitaires et des shootings photo.</p>
+    </div>
+  </section>
+
+  <section class="models">
+    <div class="wrap">
+      <h2>Nos modèles</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="asset/Images/modele1.jpg" alt="Modèle 1">
+          <div><h3>Modèle 1</h3><p>Allure raffinée et regard intense, idéale pour les campagnes de mode haut de gamme et les éditoriaux.</p></div>
+        </article>
+        <article class="card">
+          <img src="asset/Images/modele2.jpg" alt="Modèle 2">
+          <div><h3>Modèle 2</h3><p>Élégance naturelle et grande aisance devant l’objectif, parfaite pour les défilés et le prêt-à-porter.</p></div>
+        </article>
+        <article class="card">
+          <img src="asset/Images/modele3.jpg" alt="Modèle 3">
+          <div><h3>Modèle 3</h3><p>Présence marquée et style affirmé, très demandé pour la publicité, la beauté et les shootings lifestyle.</p></div>
+        </article>
+        <article class="card">
+          <img src="asset/Images/modele4.jpg" alt="Modèle 4">
+          <div><h3>Modèle 4</h3><p>Profil polyvalent et expressif, à l’aise aussi bien en studio qu’en extérieur et lors d’événements.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Nous contacter</h2>
+    <p class="lead">Remplissez le formulaire et notre équipe vous répondra rapidement.</p>
+    <form id="form">
+      <label>Nom et prénoms
+        <input type="text" name="nom" required autocomplete="name">
+      </label>
+      <label>Contact
+        <input type="tel" name="contact" required autocomplete="tel" placeholder="+225 ...">
+      </label>
+      <div class="row">
+        <label>Pays
+          <input type="text" name="pays" required autocomplete="country-name">
+        </label>
+        <label>Ville
+          <input type="text" name="ville" required autocomplete="address-level2">
+        </label>
+      </div>
+      <button type="submit" class="send">Envoyer</button>
+      <p id="msg" role="status"></p>
+    </form>
+    <p class="copy">© 2026 Maison Élite. Tous droits réservés.</p>
+  </div>
+  
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
 
 
 
